@@ -1,0 +1,54 @@
+<mat-card class="publish-card">
+  <mat-card-header>
+    <mat-card-title><b>Publish a product</b></mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="form-container">
+    <div class="form-row">
+      <mat-form-field class="form-field">
+        <mat-label>Name</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <mat-label>Description</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <mat-label>Size</mat-label>
+        <mat-select>
+          <mat-option value="s">Small</mat-option>
+          <mat-option value="m">Medium</mat-option>
+          <mat-option value="l">Large</mat-option>
+          <mat-option value="other">Other</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="form-row">
+      <mat-form-field class="form-field">
+        <mat-label>State</mat-label>
+        <mat-select>
+          <mat-option value="used">Used</mat-option>
+          <mat-option value="never used">Never Used</mat-option>
+          <mat-option value="worn">Worn</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <mat-label>Price</mat-label>
+        <input matInput type="number" placeholder="0">
+        <span matTextPrefix>$&nbsp;</span>
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <mat-label>Color</mat-label>
+        <mat-select>
+          <mat-option value="white">White</mat-option>
+          <mat-option value="black">Black</mat-option>
+          <mat-option value="yellow">Yellow</mat-option>
+          <mat-option value="pink">Pink</mat-option>
+          <mat-option value="other">Other</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button style="background: #ff0e8e;color: white; margin-left: 10px;" mat-button>Publish</button>
+  </mat-card-actions>
+</mat-card>
