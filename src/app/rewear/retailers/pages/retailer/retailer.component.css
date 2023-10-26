@@ -1,0 +1,8 @@
+.mat-spacer {
+  flex: 1 1 auto; /* Rellena el espacio vertical entre los elementos */
+}
+
+button {
+  border: 1px solid #555;
+  margin: 0 10px; /* Agrega margen vertical entre los botones */
+}

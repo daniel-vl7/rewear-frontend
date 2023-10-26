@@ -12,10 +12,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatButtonModule} from "@angular/material/button";
 import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [AppComponent, PageNotFoundComponent, RetailerComponent, ShopperComponent, HomeComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatButtonModule, MatToolbarModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatButtonModule, MatToolbarModule, MatSidenavModule,MatIconModule],
   providers: [],
   bootstrap: [AppComponent]
 })
