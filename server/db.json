@@ -1,0 +1,127 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Nike Sportswear Club Fleece",
+      "description": "Joggers",
+      "size": "M",
+      "state": "Used",
+      "price": 10,
+      "color": "red"
+    },
+    {
+      "id": 2,
+      "name": "Nike Sportswear Club Fleece",
+      "description": "Men's Monogram Hoodie",
+      "size": "L",
+      "state": "Never used",
+      "price": 30,
+      "color": "white"
+    },
+    {
+      "id": 3,
+      "name": "Adidas Collaboration Shirt",
+      "description": "Bad Bunny x Adidas",
+      "size": "L",
+      "state": "New",
+      "price": 60,
+      "color": "blue"
+    },
+    {
+      "id": 4,
+      "name": "Puma Sweatshirt",
+      "description": "Crewneck Sweatshirt",
+      "size": "S",
+      "state": "Used",
+      "price": 15,
+      "color": "gray"
+    },
+    {
+      "id": 5,
+      "name": "Reebok Yoga Mat",
+      "description": "Non-Slip Yoga Mat",
+      "size": "M",
+      "state": "New",
+      "price": 20,
+      "color": "purple"
+    },
+    {
+      "id": 6,
+      "name": "Under Armour Shorts",
+      "description": "Women's Athletic Shorts",
+      "size": "M",
+      "state": "Never used",
+      "price": 25,
+      "color": "black"
+    }
+  ],
+  "events": [
+    {
+      "id": 2,
+      "name": "Winter Clearance Sale",
+      "description":"Get the best deals on winter wear" ,
+      "location":"123 Oak Street, Downtown",
+      "date": "15th of December",
+      "time": "10:00 am"
+    },
+    {
+      "id": 3,
+      "name": "Fashion Show 2023",
+      "description":"Experience the latest fashion trends" ,
+      "location":"Fashion Mall, 5th Avenue",
+      "date": "5th of October",
+      "time": "7:30 pm"
+    },
+    {
+      "id": 4,
+      "name": "Tech Expo",
+      "description":"Discover the future of technology" ,
+      "location":"Tech Convention Center",
+      "date": "25th of September",
+      "time": "9:00 am"
+    },
+    {
+      "id": 5,
+      "name": "Music Festival",
+      "description":"Enjoy live music and great food" ,
+      "location":"City Park, Main Stage",
+      "date": "7th of July",
+      "time": "5:00 pm"
+    },
+    {
+      "id": 6,
+      "name": "Art Exhibition",
+      "description":"Explore the world of contemporary art" ,
+      "location":"Art Gallery, Art Street",
+      "date": "10th of November",
+      "time": "3:00 pm"
+    }
+  ],
+  "users": [
+    {
+      "id": 2,
+      "name": "John Doe",
+      "email": "john@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Linda Smith",
+      "email": "linda@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "David Johnson",
+      "email": "david@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Sarah Brown",
+      "email": "sarah@gmail.com"
+    },
+    {
+      "id": 6,
+      "name": "Michael Wilson",
+      "email": "michael@gmail.com"
+    }
+  ]
+}
