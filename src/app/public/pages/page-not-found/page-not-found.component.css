@@ -1,0 +1,14 @@
+div{
+  margin-top: 1rem;
+  display: grid;
+  place-items: center;
+}
+button{
+  background-color: rgba(218, 35, 196, 0.78);
+}
+img{
+  margin-top: 1rem;
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
