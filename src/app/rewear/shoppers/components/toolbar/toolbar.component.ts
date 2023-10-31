@@ -1,4 +1,4 @@
-import {ApplicationRef, Component, ComponentFactoryResolver, Injector} from '@angular/core';
+import {ApplicationRef, Component, ComponentFactoryResolver, Injector, OnInit} from '@angular/core';
 import {ProductsShoppersComponent} from "../products/products.component";
 import {EventsComponent} from "../events/events.component";
 import {ChatComponent} from "../chat/chat.component";
@@ -8,7 +8,7 @@ import {ChatComponent} from "../chat/chat.component";
   templateUrl: './toolbar.component.html',
   styleUrls: ['./toolbar.component.css']
 })
-export class ToolbarComponent {
+export class ToolbarComponent implements OnInit {
   constructor(
     private componentFactoryResolver: ComponentFactoryResolver,
     private injector: Injector,
@@ -39,5 +39,9 @@ export class ToolbarComponent {
     } else {
       console.error('Content outlet not found. Ensure you have the correct class name in your HTML.');
     }
+  }
+
+  ngOnInit(): void {
+    this.loadProductsShoppers();
   }
 }
