@@ -1,17 +1,18 @@
 <mat-toolbar>
   <span class="title">Menu</span>
   <span class="mat-spacer"></span>
-  <button mat-icon-button aria-label="Example icon-button with heart icon">
-    <mat-icon>publish</mat-icon>
+  <button mat-icon-button aria-label="Products icon" (click)="loadProductsShoppers()">
+    <mat-icon>sell</mat-icon>
   </button>
-  <button mat-icon-button aria-label="Example icon-button with share icon">
-    <mat-icon>trending_up</mat-icon>
+  <button mat-icon-button aria-label="Events icon" (click)="loadEvents()">
+    <mat-icon>storefront</mat-icon>
   </button>
-  <button mat-icon-button aria-label="Example icon-button with share icon">
-    <mat-icon>store</mat-icon>
-  </button>
-  <button mat-icon-button aria-label="Example icon-button with share icon">
-    <mat-icon>chat</mat-icon>
+  <button mat-icon-button aria-label="Chat icon" (click)="loadChat()">
+    <mat-icon>forum</mat-icon>
   </button>
   <span class="mat-spacer"></span>
 </mat-toolbar>
+
+<div class="content-outlet">
+  <!-- Dynamically loaded components will appear here -->
+</div>
