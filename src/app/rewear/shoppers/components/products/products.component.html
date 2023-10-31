@@ -1,4 +1,5 @@
 <div class="images">
+  <h1>Products</h1>
   <mat-grid-list cols="5" rowHeight="33%">
     <mat-grid-tile *ngFor="let product of products; let isFirst = first" [colspan]="isFirst ? 2 : 1" [rowspan]="isFirst ? 3 : 1" [style.height.%]="isFirst ? 100 : 33">
       <img [src]="product.urlToImg" [alt]="product.name">
