@@ -8,7 +8,7 @@ import {PageNotFoundComponent} from './public/pages/page-not-found/page-not-foun
 import {RetailerComponent} from './rewear/retailers/pages/retailer/retailer.component';
 import {ShopperComponent} from "./rewear/shoppers/pages/shopper/shopper.component";
 import {HomeComponent} from './public/pages/home/home.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {MatButtonModule} from "@angular/material/button";
 import {MatToolbarModule} from "@angular/material/toolbar";
@@ -29,11 +29,11 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatBadgeModule} from '@angular/material/badge';
-import { ProductsComponent } from './rewear/shoppers/components/products/products.component';
+import {ProductsComponent} from './rewear/shoppers/components/products/products.component';
 
 @NgModule({
-  declarations: [AppComponent, PageNotFoundComponent, RetailerComponent, ShopperComponent, HomeComponent, ProductsComponent],
-  imports: [ MatExpansionModule, MatDatepickerModule, MatCheckboxModule, MatBadgeModule,MatCardModule, MatGridListModule, MatSelectModule, MatPaginatorModule, MatInputModule, MatFormFieldModule, MatListModule,BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatTableModule, MatMenuModule, MatTabsModule, MatDividerModule],
+  declarations: [AppComponent, PageNotFoundComponent, RetailerComponent, ShopperComponent, HomeComponent, ProductsComponent, ProductsComponent],
+  imports: [MatExpansionModule, MatDatepickerModule, MatCheckboxModule, MatBadgeModule, MatCardModule, MatGridListModule, MatSelectModule, MatPaginatorModule, MatInputModule, MatFormFieldModule, MatListModule, BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatTableModule, MatMenuModule, MatTabsModule, MatDividerModule],
   providers: [],
   bootstrap: [AppComponent]
 })
