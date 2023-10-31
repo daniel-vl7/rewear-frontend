@@ -30,13 +30,19 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatBadgeModule} from '@angular/material/badge';
-import {ProductsComponent} from './rewear/shoppers/components/products/products.component';
+import {ProductsShoppersComponent} from './rewear/shoppers/components/products/products.component';
+import {ProductsComponent} from "./rewear/retailers/components/products/products.component";
 import {ProductsService} from "./rewear/shoppers/services/products.service";
+import {AdminPanelComponent} from './rewear/retailers/components/admin-panel/admin-panel.component';
+import {ChatComponent} from './rewear/retailers/components/chat/chat.component';
+import {EventsComponent} from './rewear/retailers/components/events/events.component';
+import {ChatServiceService} from "./rewear/retailers/services/chat-service.service";
+import {ToolbarComponent} from './rewear/shoppers/components/toolbar/toolbar.component';
 
 @NgModule({
-  declarations: [AppComponent, PageNotFoundComponent, RetailerComponent, ShopperComponent, HomeComponent, ProductsComponent, ProductsComponent],
+  declarations: [AppComponent, PageNotFoundComponent, RetailerComponent, ShopperComponent, HomeComponent, ProductsComponent, AdminPanelComponent, ChatComponent, EventsComponent, ToolbarComponent, ProductsShoppersComponent],
   imports: [HttpClientModule, MatExpansionModule, MatDatepickerModule, MatCheckboxModule, MatBadgeModule, MatCardModule, MatGridListModule, MatSelectModule, MatPaginatorModule, MatInputModule, MatFormFieldModule, MatListModule, BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatTableModule, MatMenuModule, MatTabsModule, MatDividerModule],
-  providers: [ProductsService],
+  providers: [ChatServiceService, ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

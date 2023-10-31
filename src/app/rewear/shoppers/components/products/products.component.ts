@@ -7,7 +7,7 @@ import {ProductsService} from "../../services/products.service";
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
-export class ProductsComponent implements OnInit {
+export class ProductsShoppersComponent implements OnInit {
   products: Products[] = [];
   constructor(private productsService: ProductsService) { }
   ngOnInit(): void {
@@ -16,5 +16,4 @@ export class ProductsComponent implements OnInit {
       this.products = response;
     });
   }
-
 }

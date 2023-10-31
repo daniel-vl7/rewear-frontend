@@ -1,0 +1,29 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.form-field {
+  flex: 1;
+  margin-right: 8px;
+}
+mat-form-field{
+  height: 100px;
+}
+.publish-card{
+  margin: 10px;
+  background-color: #888888;
+  padding: 16px;
+}
+mat-card-header{
+  margin:0 10px 10px 0;
+}
+
