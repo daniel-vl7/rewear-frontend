@@ -38,9 +38,10 @@ import {ChatComponent} from './rewear/retailers/components/chat/chat.component';
 import {EventsComponent} from './rewear/retailers/components/events/events.component';
 import {ChatServiceService} from "./rewear/retailers/services/chat-service.service";
 import {ToolbarComponent} from './rewear/shoppers/components/toolbar/toolbar.component';
+import { ProductDetailComponent } from './rewear/shoppers/components/product-detail/product-detail.component';
 
 @NgModule({
-  declarations: [AppComponent, PageNotFoundComponent, RetailerComponent, ShopperComponent, HomeComponent, ProductsComponent, AdminPanelComponent, ChatComponent, EventsComponent, ToolbarComponent, ProductsShoppersComponent],
+  declarations: [AppComponent, PageNotFoundComponent, RetailerComponent, ShopperComponent, HomeComponent, ProductsComponent, AdminPanelComponent, ChatComponent, EventsComponent, ToolbarComponent, ProductsShoppersComponent, ProductDetailComponent],
   imports: [HttpClientModule, MatExpansionModule, MatDatepickerModule, MatCheckboxModule, MatBadgeModule, MatCardModule, MatGridListModule, MatSelectModule, MatPaginatorModule, MatInputModule, MatFormFieldModule, MatListModule, BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatTableModule, MatMenuModule, MatTabsModule, MatDividerModule],
   providers: [ChatServiceService, ProductsService],
   bootstrap: [AppComponent]
