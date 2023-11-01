@@ -39,11 +39,12 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {Validators,FormsModule} from "@angular/forms";
 import {ProductsService} from "./rewear/retailers/services/products.service";
 import {NgIf} from "@angular/common";
+import {EventsRService} from "./rewear/retailers/services/events-r.service";
 
 @NgModule({
   declarations: [AppComponent, PageNotFoundComponent, RetailerComponent, ShopperComponent, HomeComponent, ProductsComponent, AdminPanelComponent, ChatComponent, EventsComponent],
   imports: [ NgIf,FormsModule,ReactiveFormsModule,HttpClientModule,MatExpansionModule, MatDatepickerModule, MatCheckboxModule, MatBadgeModule,MatCardModule, MatGridListModule, MatSelectModule, MatPaginatorModule, MatInputModule, MatFormFieldModule, MatListModule,BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatTableModule, MatMenuModule, MatTabsModule, MatDividerModule],
-  providers: [ChatServiceService,ProductsService],
+  providers: [ChatServiceService,ProductsService, EventsRService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
