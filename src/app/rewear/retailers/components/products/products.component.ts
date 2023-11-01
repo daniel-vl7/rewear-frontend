@@ -3,7 +3,7 @@ import {ProductsService} from "../../services/products.service";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
-  selector: 'app-products',
+  selector: 'app-products-retailers',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
