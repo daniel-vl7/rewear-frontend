@@ -11,6 +11,6 @@ export class ProductsService extends BaseService<Products> {
 
   constructor(http: HttpClient, private router: Router) {
     super(http);
-    this.resourceEndpoint = '/clothes';
+    this.resourceEndpoint = '/products';
   }
 }
