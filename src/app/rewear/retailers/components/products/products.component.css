@@ -27,3 +27,18 @@ mat-card-header{
   margin:0 10px 10px 0;
 }
 
+button {
+  background: #ff0e8e;
+  margin-left: 10px;
+}
+
+button:disabled {
+  background: #ccc;
+  color: #999;
+  margin-left: 10px;
+}
+mat-card-title{
+  color: #fff;
+}
+
+
