@@ -5,7 +5,7 @@
                    [rowspan]="isFirst ? 3 : 1" [style.height.%]="isFirst ? 100 : 33">
       <img [src]="product.urlToImg" [alt]="product.name">
       <div class="image-buttons">
-        <button class="zoom-button">Ver Mas</button>
+        <button mat-button class="zoom-button" [routerLink]="['/shoppers/products', product.id]">Ver Mas</button>
         <button class="zoom-button">+</button>
       </div>
     </mat-grid-tile>
@@ -17,8 +17,8 @@
     <mat-grid-tile *ngFor="let product of products.slice(0, products.length - 10)">
       <img [src]="product.urlToImg" [alt]="product.name">
       <div class="image-buttons">
-        <button class="zoom-button">Ver Mas</button>
-        <button class="zoom-button">+</button>
+        <button mat-button class="zoom-button" [routerLink]="['/shoppers/products', product.id]">Ver Mas</button>
+        <button class="zoom-button" >+</button>
       </div>
     </mat-grid-tile>
   </mat-grid-list>

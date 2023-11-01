@@ -11,8 +11,9 @@ const routes: Routes = [
   {path: 'retailers', component:RetailerComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'shoppers', component: ShopperComponent},
-  {path: '**', component: PageNotFoundComponent},
-  {path: 'shoppers/products/:id', component: ProductDetailComponent}
+  {path: 'shoppers/products/:id', component: ProductDetailComponent},
+  {path: '**', component: PageNotFoundComponent}
+
 ];
 
 @NgModule({
