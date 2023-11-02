@@ -1,6 +1,6 @@
 import {ApplicationRef, Component, ComponentFactoryResolver, Injector, OnInit} from '@angular/core';
 import {ProductsShoppersComponent} from "../products/products.component";
-import {EventsComponent} from "../events/events.component";
+import {EventsShoppersComponent} from "../events/events.component";
 import { ChatShopperComponent} from "../chat/chat.component";
 
 @Component({
@@ -20,7 +20,7 @@ export class ToolbarComponent implements OnInit {
   }
 
   loadEvents() {
-    this.loadComponent(EventsComponent);
+    this.loadComponent(EventsShoppersComponent);
   }
 
   loadChat() {

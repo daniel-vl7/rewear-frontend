@@ -1,0 +1,35 @@
+.event-card {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.custom-card {
+    width: 300px;
+    max-width: 300px;
+}
+
+.custom-card mat-card-content {
+    padding: 16px;
+}
+
+.custom-card mat-card-title,
+.custom-card mat-card-subtitle {
+    font-weight: bold;
+}
+
+.custom-card mat-card-content p {
+    margin-bottom: 16px;
+}
+.event-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -8px;
+}
+
+.custom-card {
+    width: calc(33.33% - 16px);
+    margin: 8px;
+}

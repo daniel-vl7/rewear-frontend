@@ -44,8 +44,9 @@ import {ToolbarComponent} from "./rewear/shoppers/components/toolbar/toolbar.com
 import {MatGridListModule} from '@angular/material/grid-list';
 import {RetailerToolbarComponent} from "./rewear/retailers/components/retailer-toolbar/retailer-toolbar.component";
 import {ChatShopperComponent} from "./rewear/shoppers/components/chat/chat.component";
+import {EventsShoppersComponent} from "./rewear/shoppers/components/events/events.component";
 @NgModule({
-  declarations: [ChatShopperComponent,AppComponent, PageNotFoundComponent, RetailerComponent, ShopperComponent, HomeComponent, ProductsRetailerComponent, AdminPanelComponent, ChatRetailerComponent, EventsRetailerComponent,ToolbarComponent, ProductsShoppersComponent,RetailerToolbarComponent],
+  declarations: [EventsShoppersComponent,ChatShopperComponent,AppComponent, PageNotFoundComponent, RetailerComponent, ShopperComponent, HomeComponent, ProductsRetailerComponent, AdminPanelComponent, ChatRetailerComponent, EventsRetailerComponent,ToolbarComponent, ProductsShoppersComponent,RetailerToolbarComponent],
   imports: [ NgIf,FormsModule,ReactiveFormsModule,HttpClientModule,MatExpansionModule, MatGridListModule, MatDatepickerModule, MatCheckboxModule, MatBadgeModule,MatCardModule, MatGridListModule, MatSelectModule, MatPaginatorModule, MatInputModule, MatFormFieldModule, MatListModule,BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatTableModule, MatMenuModule, MatTabsModule, MatDividerModule],
   providers: [ChatServiceService,ProductsService, EventsRService],
   bootstrap: [AppComponent]
