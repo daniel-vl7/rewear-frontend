@@ -10,7 +10,9 @@
   align-items: center;
   margin-bottom: 16px;
 }
-
+.example-card{
+  margin:1rem;
+}
 .form-field {
   flex: 1;
   margin-right: 8px;
