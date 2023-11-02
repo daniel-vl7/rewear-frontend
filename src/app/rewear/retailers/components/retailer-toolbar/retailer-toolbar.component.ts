@@ -1,7 +1,4 @@
-import {ApplicationRef, Component, ComponentFactoryResolver, Injector} from "@angular/core";
-import {ProductsShoppersComponent} from "../../../shoppers/components/products/products.component";
-import {EventsComponent} from "../../../shoppers/components/events/events.component";
-import {ChatComponent} from "../../../shoppers/components/chat/chat.component";
+import {ApplicationRef, Component, ComponentFactoryResolver, Injector, OnInit} from "@angular/core";
 import {ProductsRetailerComponent} from "../products/products.component";
 import {EventsRetailerComponent} from "../events/events.component";
 import {ChatRetailerComponent} from "../chat/chat.component";
@@ -12,7 +9,7 @@ import {AdminPanelComponent} from "../admin-panel/admin-panel.component";
     templateUrl: './retailer-toolbar.component.html',
     styleUrls: ['./retailer-toolbar.component.css']
 })
-export class RetailerToolbarComponent{
+export class RetailerToolbarComponent implements OnInit{
     constructor(
         private componentFactoryResolver: ComponentFactoryResolver,
         private injector: Injector,
@@ -46,5 +43,8 @@ export class RetailerToolbarComponent{
         } else {
             console.error('Content outlet not found. Ensure you have the correct class name in your HTML.');
         }
+    }
+    ngOnInit() {
+        this.loadRetailerProducts();
     }
 }
