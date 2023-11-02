@@ -35,7 +35,15 @@
   margin: -8px;
 }
 
-.custom-card {
-  width: calc(33.33% - 16px);
-  margin: 8px;
+
+@media (max-width: 768px) {
+  .event-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .custom-card {
+    width: 100%; /* Ajusta el ancho de los elementos a la pantalla */
+    margin: 10px; /* Añade margen entre las tarjetas */
+  }
 }
