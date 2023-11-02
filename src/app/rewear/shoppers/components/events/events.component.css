@@ -35,7 +35,6 @@
   margin: -8px;
 }
 
-
 @media (max-width: 768px) {
   .event-card {
     display: flex;
@@ -43,7 +42,20 @@
     justify-content: center;
   }
   .custom-card {
-    width: 100%; /* Ajusta el ancho de los elementos a la pantalla */
-    margin: 10px; /* Añade margen entre las tarjetas */
+    width: 100%;
+    margin: 10px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Añade margen entre las tarjetas */
+/* Añade margen entre las tarjetas */
