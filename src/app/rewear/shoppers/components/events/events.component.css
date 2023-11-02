@@ -47,12 +47,12 @@
     max-width: 100%; /* Asegura que las tarjetas no se estiren más allá del ancho de la pantalla */
     margin: 10px;
   }
+
+  /* Reducción del espacio entre las tarjetas en dispositivos móviles */
+  .event-card .custom-card {
+    margin: 10px;
+  }
 }
-
-
-
-
-
 
 
 
