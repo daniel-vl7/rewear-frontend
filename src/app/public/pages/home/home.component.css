@@ -50,7 +50,15 @@ p {
     object-fit: cover;
     transition: opacity 0.3s;
 }
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 4rem;
+    }
 
+    .description {
+        font-size: 2rem;
+    }
+}
 
 .card:hover img {
     opacity: 0.3;
