@@ -1,35 +1,41 @@
 .event-card {
-    display: grid;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f0f0f0;
 }
 
 .custom-card {
-    width: 300px;
-    max-width: 300px;
+  width: 300px;
+  max-width: 300px;
+  margin: 10px;
+  box-shadow: 2px 2px 5px #888888;
 }
 
 .custom-card mat-card-content {
-    padding: 16px;
+  padding: 16px;
+  background-color: #ffffff;
 }
 
 .custom-card mat-card-title,
 .custom-card mat-card-subtitle {
-    font-weight: bold;
+  font-weight: bold;
+  color: #333;
 }
 
 .custom-card mat-card-content p {
-    margin-bottom: 16px;
+  margin-bottom: 10px;
 }
+
 .event-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: -8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -8px;
 }
 
 .custom-card {
-    width: calc(33.33% - 16px);
-    margin: 8px;
+  width: calc(33.33% - 16px);
+  margin: 8px;
 }
