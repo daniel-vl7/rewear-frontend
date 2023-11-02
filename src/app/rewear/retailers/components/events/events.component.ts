@@ -3,11 +3,11 @@ import {EventsRService} from "../../services/events-r.service";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
-  selector: 'app-events',
+  selector: 'retailer-events',
   templateUrl: './events.component.html',
   styleUrls: ['./events.component.css']
 })
-export class EventsComponent {
+export class EventsRetailerComponent {
   eventForm: FormGroup;
 
   constructor(private eventrService:EventsRService, private fb:FormBuilder) {

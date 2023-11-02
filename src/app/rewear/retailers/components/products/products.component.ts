@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
+import {Component } from '@angular/core';
 import {ProductsService} from "../../services/products.service";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
-  selector: 'app-products',
+  selector: 'app-products-retailers',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
-export class ProductsComponent {
+export class ProductsRetailerComponent {
   productForm: FormGroup;
   constructor(private productService:ProductsService, private fb:FormBuilder) {
     this.productForm = this.fb.group({
@@ -29,4 +29,5 @@ export class ProductsComponent {
       });
     }
   }
+
 }
