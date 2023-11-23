@@ -1,0 +1,223 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Nike Sportswear Club Fleece",
+      "description": "Joggers",
+      "size": "M",
+      "state": "Used",
+      "price": 10,
+      "color": "red",
+      "urlToImg": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/d8f5bca0-eb4e-4279-a8be-7d92f6b1d7e6/dri-fit-standard-issue-mens-basketball-pants-1XRJ4N.png"
+    },
+    {
+      "id": 2,
+      "name": "Nike Sportswear Club Fleece",
+      "description": "Men's Monogram Hoodie",
+      "size": "L",
+      "state": "Never used",
+      "price": 30,
+      "color": "white",
+      "urlToImg": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b37ab836-8d92-46d9-8909-62b5fd8e7114/nikecourt-mens-fleece-tennis-hoodie-090q22.png"
+    },
+    {
+      "id": 3,
+      "name": "Adidas Collaboration Shirt",
+      "description": "Bad Bunny x Adidas",
+      "size": "L",
+      "state": "New",
+      "price": 60,
+      "color": "blue",
+      "urlToImg": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/728ceffe0abe405d8e38ae790096a829_9366/Camisa_Essentials_Dye_Coach_Azul_HK7512_01_laydown.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Puma Sweatshirt",
+      "description": "Crewneck Sweatshirt",
+      "size": "S",
+      "state": "Used",
+      "price": 15,
+      "color": "gray",
+      "urlToImg": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/539491/01/mod01/fnd/PNA/fmt/png/PUMA-x-TMC-Everyday-Hussle-Men's-Crew-Sweatshirt"
+    },
+    {
+      "id": 5,
+      "name": "Reebok Yoga Mat",
+      "description": "Non-Slip Yoga Mat",
+      "size": "M",
+      "state": "New",
+      "price": 20,
+      "color": "purple",
+      "urlToImg": "https://previews.dropbox.com/p/thumb/ACF-S0RwYp8BtrqYOtEOnA-Yx9jF4RG6scQSIXmGCZ96MxmIObJqlF87Fb5l2HTDhcPKnlD1uOcBD_3nErKgZPW9T7e5SCGkt2Vll781WweMsZU0YPgSCTx2Bn-QL-m6s5nBm7UsjruAP7k9quoGn90k52W7X2hMfzfpUiEFojO0uA5z-yUqvZPI5SC3-afnDOEv_EoLrld1axo_kcxNXq_abzGtK-1EdbQmCD-hmS3TucEELi6HpxPMLKxjfJCFsMxh5REyWjdUZCNKuQyb0EusGRU50jHHq3e63-wjj0VnusezAtFpVcV8O1k47GSkNJv04S3DYpxwuuAGwq_6XV5X/p.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Under Armour Shorts",
+      "description": "Women's Athletic Shorts",
+      "size": "M",
+      "state": "Never used",
+      "price": 25,
+      "color": "black",
+      "urlToImg": "https://underarmour.scene7.com/is/image/Underarmour/PS1362517-001_HF?rp=standard-0pad%7CpdpMainDesktop&scl=1&fmt=jpg&qlt=75&resMode=sharp2&cache=on%2Con&bgc=F0F0F0&wid=566&hei=708&size=566%2C708"
+    },
+    {
+      "id": 7,
+      "name": "Lace-Up Dad Sneakers",
+      "description": "Men's casual sneakers",
+      "size": "44",
+      "state": "Never used",
+      "price": 120,
+      "color": "beige",
+      "urlToImg": "https://previews.dropbox.com/p/thumb/ACF705L7WSYMUMZ4UnXGWQ8zJ8KQJUbk_iZXOTWWIBpOZa1vPrpRSMQaKLZ2n_8qswACrHW2rDSbwtjP1frO73zbuz-dOWYC1O-db9cnIjRW2w_Hj976w2lwxO8tsHU8J0THF8HorbT-uJICH2uy97RIgl8HGcWrZLNx4zhqZmdE_2xM0y7Eq2u-x8rGQ419_h0v5W68gzKnTxbVuEEAXbVB6-JSHUFGWy54OkdlU5cVuLENEAqol5QOoKelsln7nee-6rvDg5VQYytBXWcy2mpc5ub6lsvMQzrss2Cxuhd4nqWxzmlTWNcdm53egLe5EUog8TnEGkYAnrbNiu7lH_C8/p.png"
+    },
+    {
+      "id": 8,
+      "name": "Atlanta Falcons Graphic Crew Sweatshirt",
+      "description": "Swetcher",
+      "size": "L",
+      "state": "New",
+      "color": "dark gray",
+      "price": 90,
+      "urlToImg": "https://previews.dropbox.com/p/thumb/ACEWMAFwigURQJMSpCcrDebX2TIUHaXId96ns9junTzOonpXSDhZc0Emhn2-6o2U3JDLhW3G8tF3Xgga1K8Y-syLobwjoCuYV9eLA0YE7uDIY_bodKZT07nbtmNUoh3ZIOpSr84v4JBh32qX0KzxkA0N9QTshMC2nnL4aRPmY42IKaJ5Zg7XwqCqEU0oWE-VnB7KjfbLqO4NIPj5bdOzwwYnPWk_TyDMiRJA0ErEAmyxqLgNSijv6ioAEy7-gxAydYKMuLSBNHAjfw9iMbdu7HMLj315PRE5q04yMyR2ZDwswN98Y5n2VKO_Jnr_tRRMioq-mp9049PC6Q_NIqfOzziS/p.png"
+    },
+    {
+      "id": 9,
+      "name": "Essential Popover Hoodie",
+      "description": "Hoodie",
+      "size": "M",
+      "state": "User",
+      "color": "beige",
+      "price": 60,
+      "urlToImg": "https://previews.dropbox.com/p/thumb/ACEvUTpbCEYe7Tlm9BsNlAX_kICOfAg3tlwAxfvcvwEVFj3opSRRX07vKkGMYkGVmZURQCIo3p7WCnYq6zxr6JZlPAk0KauRrXBFLl8_8UpQrL2rScjmfcSNRVRuzUdArOtI61p2N305yjRJZEduJop6H0Fqx_qbcqDIU3ujgOjpAJ2YhdcchxPbR_ro_RGoO9AHSVV9XkNXzGTQnWp4L0YOVeYkruel6BusPhWIikuBBVCUrh_Sl3IK5ny32Attq2neiwuQ41JEKoj2xHpZyZ96uYmzcCqL20Z2Cmbjo20mn6qvrd6SPDZZeFo-Bv0YS9GV4Nx3gzNtY2_kzuAqnXeB/p.png"
+    },
+    {
+      "id": 10,
+      "name": "Vegan Suede Bomber Jacket",
+      "description": "Bomber Jacket",
+      "size": "L",
+      "state": "New",
+      "color": "light brown",
+      "price": 160,
+      "urlToImg": "https://previews.dropbox.com/p/thumb/ACG-3E8ocermOjH3oAh0oJ4YiHxCVAdxDKKSksNuNm2yFIKK5U-9qD-t_VctdilFqOjIXNXCiT6-4ATFlv7EczZ04omH6LTCWMh2bCq_36jQ_fsJT9FMhre42ZrxbVExbzzLyuR-73hbbNac1riABBpI8MBrwzv_4qNiNhLzO2VsTOiFxpbWWKduKr4mAmOhEOm1ayqBQ-C4r-zHuC7MArQgxiXpykUcrjC0EJ6ZO5NuS0PJe_APei14jmwEquoC9R8CM6I96SSrSv7oYlPzF1s-ibolqyctktbt3HL5SRn-f3B-AMU-aZI_seBNcrjxM-6sewNo6taJDEpvJ51HaOBW/p.png"
+    },
+    {
+      "id": 11,
+      "name": "Long-Sleeve Turtleneck Mini Sweater Dress",
+      "description": "Turtleneck",
+      "size": "XL",
+      "state": "Used",
+      "color": "black",
+      "price": 50,
+      "urlToImg": "https://previews.dropbox.com/p/thumb/ACH4jCGSx1gcKPQXOJYHj35ZD3tewGmUhzDpvId0PUv0dx2h9k0VtZ_PMnKyfD433Fl81ZjHl3PZPrYnTexfxnn7YkVawwmjmCnamdiqRng2FcvcI3clbb-99XRA_92D-L-TYMQingPYMITun2-CoMKWXJYppNs4xRUDdc5Gy4LLmVFtbDdbogjeGZnS1b4GtWjg-oACe-TPUS2nFvvNB9NakpvNxxnjROW4PAS1ik8Orai7ljDXhwJ512cgCKIzj6Gm8aunHmGnpmhCWEGHdSjaYoHUrgarXfuQnHUEKVB27RnZfOdS1FVsa6etdxfdrzMso0qVyR6SI0zyYAIz5cpJ/p.png"
+    },
+    {
+      "id": 12,
+      "name": "long-sleeve pikachu graphic tee",
+      "description": "long-sleeve tee",
+      "size": "S",
+      "state": "Used",
+      "color": "white ",
+      "price": 29.95,
+      "urlToImg": "https://previews.dropbox.com/p/thumb/ACGg082FQbCn4doSF7A8-AVshr7o1FBfXRnb2ex33NfBn0mzBzaTh4tj0xl0qyxX21zTp-EFpv4kQm99ADJ_G_Xgm69JxNxMOfkTENJCsyTfxz5lAJOzJHYIYeHueDk3z6OlARJnO6pS1jCziv4I9bY9EHkf6uysK0_OdwgkzCBMxIKITTf2M7z9a58Lsc85qlMaVk7y2lU6tySaFlB_cmFD7gKG8n8Bzi9LmXdfnvHHh5OFaNsxf4HDEryZr96U9kOimvfg6yWEXxlsxkRVP6Ody8vpbYg7z37sAdSu5glT3cCMAoWXWTgdg_8hhvOvkb8VNPm52kMZnbFpIm3wjkuR/p.png"
+    },
+    {
+      "id": 13,
+      "name": "Strappy Circular Heels",
+      "description": "Heels",
+      "size": "36",
+      "state": "New",
+      "color": "creme",
+      "price": 80,
+      "urlToImg": "https://previews.dropbox.com/p/thumb/ACEz6a3ewywCYtVt9cezcoHyTqGERo_8drnZXauWjLkLPuxg-PP-smcHcEvVTvnK1YPqiuLsNNMP4q9TBdyJfTEOOwaFI_YIf2cRemc-lxeYBnuPmZSvamOJA7bUKAC4mIaNmp1jlAj9x0xh7xJivr_-__LJgS6y2KVwFlJau5m1byZwQMm45XKxfTZc0EPcWOV0S-4xj6MPWR9cCiUkvuJgygfWkKm98A0iujVeM_OBXKwHf0viVvqYctV21rY5_YGuoFcA-7hJvd_dXv6HiZwE5Jve97z-yXvJyXo2HQo66PLGPdP9CnY5_QRRHxvAWPNhomfGlQqYqgMOluzlkVw4/p.png"
+    },
+    {
+      "id": 14,
+      "name": "Stretch Satin Draped Midi Dress",
+      "description": "Dress",
+      "size": "M",
+      "state": "Never used",
+      "color": "navy blue",
+      "price": 120,
+      "urlToImg": "https://previews.dropbox.com/p/thumb/ACEBzAwXQG9hB6jq7ldpNxRPEnNDCnAYpktJ4b-B5wUOddFIKLohBHpmRR4NtzoIpIBENG6Dc7NIrrbyLPkejeokkkhPqFR3mqVcEFrEZT7m1X8YqVgE2fw8ew7xlA-OtFoQUJ1jy7O7srs50XKAYFVPqKObIrX01eKGU-XjKHepmSYjDEz7XXytqZIWHIbhCW-wXK3JHVbPFgZqbui0snk5k5nAIVjtPTNaC6VTcKviNgWu1aNvmfDfhZ0nh_PuDpLiCSCcv8fsO0BSFMwK5w8X0KDhNeClEvh-SVBzrJo_MzQSySzrNS6T9nj-pnNntzrvSnsZGkxotY0nbqodpArf/p.png"
+    },
+    {
+      "id": 15,
+      "name": "Varsity Bomber Jacket",
+      "description": "Varsity Jacket",
+      "size": "L",
+      "state": "Used",
+      "color": "beige",
+      "price": 120,
+      "urlToImg": "https://previews.dropbox.com/p/thumb/ACHJr6XpxjV0_8VVsYCNkgczwo9Dmb7e0zhzWzdOyseKZoFVi7tGFwwCu3eIQyua0OrUQqGsCYaKh6tyvf2q5Pq1hwhixLRFMuwnfF4zBzsbHRk8T_j0RTVUdzn5BJoApldVPp1WNhyg0yFvO-bojZKp3hej98Bxzz-DGm9zXJhaRZilAel1BKB9eKaiTgREJo8yf3ziG3cynXj_j8nioIyxVaEmbey7yEDOZqQHH6HkBztpPul-km853KOcvvIhnXCJgFr82y6d70ub6LUnHWbDFTvoICYsP-6lYUm1NvAAC6Oib-qWFNnhJ2VAS3rdFnSA30AEU3Re9ENSnE2wvNtJ/p.png"
+    }
+  ],
+  "events": [
+    {
+      "id": 2,
+      "name": "Winter Clearance Sale",
+      "description": "Get the best deals on winter wear",
+      "location": "123 Oak Street, Downtown",
+      "date": "15th of December",
+      "time": "10:00 am"
+    },
+    {
+      "id": 3,
+      "name": "Fashion Show 2023",
+      "description": "Experience the latest fashion trends",
+      "location": "Fashion Mall, 5th Avenue",
+      "date": "5th of October",
+      "time": "7:30 pm"
+    },
+    {
+      "id": 4,
+      "name": "Tech Expo",
+      "description": "Discover the future of technology",
+      "location": "Tech Convention Center",
+      "date": "25th of September",
+      "time": "9:00 am"
+    },
+    {
+      "id": 5,
+      "name": "Music Festival",
+      "description": "Enjoy live music and great food",
+      "location": "City Park, Main Stage",
+      "date": "7th of July",
+      "time": "5:00 pm"
+    },
+    {
+      "id": 6,
+      "name": "Art Exhibition",
+      "description": "Explore the world of contemporary art",
+      "location": "Art Gallery, Art Street",
+      "date": "10th of November",
+      "time": "3:00 pm"
+    }
+  ],
+  "users": [
+    {
+      "id": 2,
+      "name": "John Doe",
+      "email": "john@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Linda Smith",
+      "email": "linda@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "David Johnson",
+      "email": "david@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Sarah Brown",
+      "email": "sarah@gmail.com"
+    },
+    {
+      "id": 6,
+      "name": "Michael Wilson",
+      "email": "michael@gmail.com"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<div class="images">
+  <h1 class="title">Products</h1>
+  <mat-grid-list cols="5" rowHeight="33%">
+    <mat-grid-tile *ngFor="let product of products.slice().reverse().slice(0, 10); let isFirst = first" [colspan]="isFirst ? 2 : 1"
+                   [rowspan]="isFirst ? 3 : 1" [style.height.%]="isFirst ? 100 : 33">
+      <img [src]="product.urlToImg" [alt]="product.name">
+      <div class="image-buttons">
+        <button mat-button class="zoom-button" [routerLink]="['/shoppers/products', product.id]">Ver Mas</button>
+        <button class="zoom-button">+</button>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <h1 class="title center">REVISA NUESTROS OTROS PRODUCTOS</h1>
+
+  <mat-grid-list cols="5" rowHeight="250px">
+    <mat-grid-tile *ngFor="let product of products.slice(0, products.length - 10)">
+      <img [src]="product.urlToImg" [alt]="product.name">
+      <div class="image-buttons">
+        <button mat-button class="zoom-button" [routerLink]="['/shoppers/products', product.id]">Ver Mas</button>
+        <button class="zoom-button" >+</button>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+

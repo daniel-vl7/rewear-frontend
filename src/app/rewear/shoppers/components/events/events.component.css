@@ -1,0 +1,61 @@
+.event-card {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.custom-card {
+  width: 300px;
+  max-width: 300px;
+  margin: 10px;
+  box-shadow: 2px 2px 5px #888888;
+}
+
+.custom-card mat-card-content {
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.custom-card mat-card-title,
+.custom-card mat-card-subtitle {
+  font-weight: bold;
+  color: #333;
+}
+
+.custom-card mat-card-content p {
+  margin-bottom: 10px;
+}
+
+.event-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -8px;
+}
+
+/* Estilos para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 768px) {
+  .event-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .custom-card {
+    width: 100%;
+    max-width: 100%; /* Asegura que las tarjetas no se estiren más allá del ancho de la pantalla */
+    margin: 10px;
+  }
+
+  /* Reducción del espacio entre las tarjetas en dispositivos móviles */
+  .event-card .custom-card {
+    margin: 10px;
+  }
+}
+
+
+
+
+/* Añade margen entre las tarjetas */
+/* Añade margen entre las tarjetas */
