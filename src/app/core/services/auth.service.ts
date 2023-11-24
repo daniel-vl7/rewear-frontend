@@ -1,87 +1,79 @@
-import { Component, inject } from '@angular/core';
-import { NgIf } from '@angular/common';
+import { Injectable, inject } from '@angular/core';
 import {
-  FormBuilder,
-  FormControl,
-  FormGroup,
-  ReactiveFormsModule,
-  Validators,
-} from '@angular/forms';
+  Auth,
+  AuthProvider,
+  GithubAuthProvider,
+  GoogleAuthProvider,
+  UserCredential,
+  authState,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signInWithPopup,
+  updateProfile as updateProfileFirebase, // Importa la función de actualización de perfil
+} from '@angular/fire/auth';
 
-import { AuthService, Credential } from '../../../core/services/auth.service';
-
-interface SignUpForm {
-  names: FormControl<string>;
-  lastName: FormControl<string>;
-  email: FormControl<string>;
-  password: FormControl<string>;
+export interface Credential {
+  email: string;
+  password: string;
 }
 
-@Component({
-  standalone: true,
-  imports: [
-    ReactiveFormsModule,
-    NgIf,
-  ],
-  selector: 'app-sign-up',
-  templateUrl: './sign-up.component.html',
-  providers:[],
+@Injectable({
+  providedIn: 'root',
 })
+export class AuthService {
+  private auth: Auth = inject(Auth);
 
-export default class SignUpComponent {
-  hide = true;
+  readonly authState$ = authState(this.auth);
 
-  formBuilder= inject(FormBuilder);
-
-  form: FormGroup<SignUpForm> = this.formBuilder.group({
-    names: this.formBuilder.control('', {
-      validators: Validators.required,
-      nonNullable: true,
-    }),
-    lastName: this.formBuilder.control('', {
-      validators: Validators.required,
-      nonNullable: true,
-    }),
-    email: this.formBuilder.control('', {
-      validators: [Validators.required, Validators.email],
-      nonNullable: true,
-    }),
-    password: this.formBuilder.control('', {
-      validators: Validators.required,
-      nonNullable: true,
-    }),
-  });
-
-  private authService = inject(AuthService);
-  private _router = inject(Router);
-
-  get isEmailValid(): string | boolean {
-    const control = this.form.get('email');
-
-    const isInvalid = control?.invalid && control.touched;
-
-    if (isInvalid) {
-      return control.hasError('required')
-        ? 'This field is required'
-        : 'Enter a valid email';
-    }
-
-    return false;
+  signUpWithEmailAndPassword(credential: Credential): Promise<UserCredential> {
+    return createUserWithEmailAndPassword(
+      this.auth,
+      credential.email,
+      credential.password
+    );
   }
-  async signUp(): Promise<void> {
-    if (this.form.invalid) return;
 
-    const credential: Credential = {
-      email: this.form.value.email || '',
-      password: this.form.value.password || '',
-    };
+  logInWithEmailAndPassword(credential: Credential) {
+    return signInWithEmailAndPassword(
+      this.auth,
+      credential.email,
+      credential.password
+    );
+  }
 
+  logOut(): Promise<void> {
+    return this.auth.signOut();
+  }
+
+  // providers
+
+  signInWithGoogleProvider(): Promise<UserCredential> {
+    const provider = new GoogleAuthProvider();
+
+    return this.callPopUp(provider);
+  }
+
+  signInWithGithubProvider(): Promise<UserCredential> {
+    const provider = new GithubAuthProvider();
+
+    return this.callPopUp(provider);
+  }
+
+  async callPopUp(provider: AuthProvider): Promise<UserCredential> {
     try {
-      const userCredentials = await this.authService.signUpWithEmailAndPassword(credential);
-      console.log(userCredentials);
-      this._router.navigateByUrl('/');
-    } catch (error){
-      console.error(error);
+      const result = await signInWithPopup(this.auth, provider);
+
+      return result;
+    } catch (error: any) {
+      return error;
+    }
+  }
+
+  async updateProfile(user: any, userData: any): Promise<void> {
+    try {
+      await updateProfileFirebase(user, userData);
+    } catch (error) {
+      throw error; // Puedes manejar el error de la manera que desees
     }
   }
 }
