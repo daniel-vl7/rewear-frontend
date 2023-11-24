@@ -2,7 +2,6 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
 
 import {PageNotFoundComponent} from './public/pages/page-not-found/page-not-found.component';
 import {RetailerComponent} from './rewear/retailers/pages/retailer/retailer.component';
@@ -45,11 +44,53 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {RetailerToolbarComponent} from "./rewear/retailers/components/retailer-toolbar/retailer-toolbar.component";
 import {ChatShopperComponent} from "./rewear/shoppers/components/chat/chat.component";
 import {EventsShoppersComponent} from "./rewear/shoppers/components/events/events.component";
+import {AppComponent} from "./app.component";
 @NgModule({
-  declarations: [EventsShoppersComponent,ChatShopperComponent,AppComponent, PageNotFoundComponent, RetailerComponent, ShopperComponent, HomeComponent, ProductsRetailerComponent, AdminPanelComponent, ChatRetailerComponent, EventsRetailerComponent,ToolbarComponent, ProductsShoppersComponent,RetailerToolbarComponent],
-  imports: [ NgIf,FormsModule,ReactiveFormsModule,HttpClientModule,MatExpansionModule, MatGridListModule, MatDatepickerModule, MatCheckboxModule, MatBadgeModule,MatCardModule, MatGridListModule, MatSelectModule, MatPaginatorModule, MatInputModule, MatFormFieldModule, MatListModule,BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatTableModule, MatMenuModule, MatTabsModule, MatDividerModule],
-  providers: [ChatServiceService,ProductsService, EventsRService],
-  bootstrap: [AppComponent]
+  declarations: [
+    EventsShoppersComponent,
+    ChatShopperComponent,
+    PageNotFoundComponent,
+    RetailerComponent,
+    ShopperComponent,
+    HomeComponent,
+    ProductsRetailerComponent,
+    AdminPanelComponent,
+    ChatRetailerComponent,
+    EventsRetailerComponent,
+    ToolbarComponent,
+    ProductsShoppersComponent,
+    RetailerToolbarComponent],
+  imports: [ NgIf,FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatExpansionModule,
+    MatGridListModule,
+    MatDatepickerModule,
+    MatCheckboxModule,
+    MatBadgeModule,
+    MatCardModule,
+    MatGridListModule,
+    MatSelectModule,
+    MatPaginatorModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatListModule,
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatTableModule,
+    MatMenuModule,
+    MatTabsModule,
+    MatDividerModule],
+  providers: [
+    ChatServiceService,
+    ProductsService,
+    EventsRService],
+  bootstrap: [AppComponent],
 })
 export class AppModule {
 }

@@ -1,5 +1,5 @@
-import { Component, inject } from '@angular/core';
-import { NgIf } from '@angular/common';
+import {Component, inject} from '@angular/core';
+
 import {
   FormBuilder,
   FormControl,
@@ -7,6 +7,17 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { NgIf } from '@angular/common';
+import { Router, RouterModule } from '@angular/router';
+
+
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { AuthService, Credential } from 'src/app/core/services/auth.service';
+import {ButtonProviders} from "../btn-providers/btn-providers";
 
 
 interface LogInForm {
@@ -17,14 +28,20 @@ interface LogInForm {
 @Component({
   standalone: true,
   imports: [
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule,
     ReactiveFormsModule,
+    RouterModule,
     NgIf,
+    MatSnackBarModule,
+    ButtonProviders,
   ],
-  selector: 'app-log-in',
-  templateUrl:'./log-in.component.html',
-  providers:[],
+  selector: 'login',
+  templateUrl: './log-in.component.html',
+  providers: [],
 })
-
 export default class LogInComponent {
   hide = true;
 
@@ -45,7 +62,13 @@ export default class LogInComponent {
       validators: Validators.required,
       nonNullable: true,
     }),
+
+
   });
+
+  goToSignUp() {
+    this.router.navigate(['/signup']); // Esto navegará al componente SignUpComponent
+  }
 
   get isEmailValid(): string | boolean {
     const control = this.form.get('email');
@@ -61,7 +84,7 @@ export default class LogInComponent {
     return false;
   }
 
-  async logIn(): Promise<void>{
+  async logIn(): Promise<void> {
     if (this.form.invalid) return;
 
     const credential: Credential = {
@@ -74,7 +97,8 @@ export default class LogInComponent {
       const snackBarRef = this.openSnackBar();
 
       snackBarRef.afterDismissed().subscribe(() => {
-        this.router.navigateByUrl('/');
+        console.log("funciona")
+        this.router.navigateByUrl('/home');
       });
     } catch (error) {
       console.error(error);
@@ -82,7 +106,7 @@ export default class LogInComponent {
   }
 
   openSnackBar() {
-    return this._snackBar.open('Succesfully Log in', 'Close', {
+    return this._snackBar.open('Succesfully Log in 😀', 'Close', {
       duration: 2500,
       verticalPosition: 'top',
       horizontalPosition: 'end',
