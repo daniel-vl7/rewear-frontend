@@ -1,28 +1,12 @@
 <div class="form">
   <div class="form__container">
-    <h1 class="titulo" >ReWear</h1>
-    <h1>Sign up</h1>
-    <form [formGroup]="form" (ngSubmit)="signUp()">
-      <div>
-        <mat-form-field>
-          <mat-label>Nombres</mat-label>
-          <input matInput formControlName="names" />
-          <mat-error>This field is required</mat-error>
-        </mat-form-field>
-      </div>
-
-      <div>
-        <mat-form-field>
-          <mat-label>Apellidos</mat-label>
-          <input matInput formControlName="lastName" />
-          <mat-error>This field is required</mat-error>
-        </mat-form-field>
-      </div>
+    <h1>Log in</h1>
+    <form [formGroup]="form" (ngSubmit)="logIn()">
       <div>
         <mat-form-field>
           <mat-label>Email</mat-label>
-          <input matInput formControlName="email"/>
-          <mat-error *ngIf="isEmailValid as message">{{message}}</mat-error>
+          <input matInput formControlName="email" />
+          <mat-error *ngIf="isEmailValid as messsage">{{ messsage }}</mat-error>
         </mat-form-field>
       </div>
 
@@ -48,12 +32,15 @@
       </div>
 
       <div>
-        <button mat-flat-button color="Primary" type="submit">Sign up</button>
+        <button mat-flat-button color="primary" type="submit">Log in</button>
       </div>
     </form>
     <hr />
+    <span class="small-text providers">Have Google or GitHub?</span>
+    <app-button-providers [isLogin]="true" />
     <span class="small-text log-in-redirect"
-    >Already have an account? <a routerLink="/auth/log-in">Log in</a></span
+    >Don’t have an account yet?
+      <a (click)="goToSignUp()">Sign up</a></span
     >
   </div>
 </div>

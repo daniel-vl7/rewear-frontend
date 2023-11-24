@@ -5,7 +5,9 @@ import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-foun
 import {RetailerComponent} from "./rewear/retailers/pages/retailer/retailer.component";
 import {ShopperComponent} from "./rewear/shoppers/pages/shopper/shopper.component";
 import {ProductDetailComponent} from "./rewear/shoppers/components/product-detail/product-detail.component";
-import {authGuard, publicGuard} from "../app/core/guards/auth.guard";
+import LogInComponent from "./public/auth/log-in/log-in.component";
+import SignUpComponent from './public/auth/sign-up/sign-up.component';
+import {AdminPanelComponent} from "./rewear/retailers/components/admin-panel/admin-panel.component";
 
 
 const routes: Routes = [
@@ -14,28 +16,15 @@ const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'shoppers', component: ShopperComponent},
   {path: 'shoppers/products/:id', component: ProductDetailComponent},
+  { path: 'log-in', component: LogInComponent },
+  { path: 'sign-up', component: SignUpComponent },
+  {path: 'retailers/administrator-panel', component:AdminPanelComponent},
   {path: '**', component: PageNotFoundComponent},
-  {
-    path: 'auth',
-    canActivate: [publicGuard],
-    children: [
-      {
-        path: 'sign-up',
-        loadComponent: () => import('./pages/auth/sign-up/sign-up.component'),
-      },
-      {
-        path: 'log-in',
-        loadComponent: () => import('./pages/auth/log-in/log-in.component'),
-      },
-    ],
-  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-
-
-
 export class AppRoutingModule { }
+

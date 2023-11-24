@@ -8,7 +8,15 @@ import {
   Validators,
 } from '@angular/forms';
 
-import { AuthService, Credential } from '../../../core/services/augth.service';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { Router, RouterModule } from '@angular/router';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { AuthService, Credential } from 'src/app/core/services/auth.service';
+import {ButtonProviders} from "../btn-providers/btn-providers";
+
 
 interface SignUpForm {
   names: FormControl<string>;
@@ -20,18 +28,24 @@ interface SignUpForm {
 @Component({
   standalone: true,
   imports: [
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule,
     ReactiveFormsModule,
+    RouterModule,
     NgIf,
+    MatSnackBarModule,
+    ButtonProviders,
   ],
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
-  providers:[],
+  providers: [],
 })
-
 export default class SignUpComponent {
   hide = true;
 
-  formBuilder= inject(FormBuilder);
+  formBuilder = inject(FormBuilder);
 
   form: FormGroup<SignUpForm> = this.formBuilder.group({
     names: this.formBuilder.control('', {
@@ -54,6 +68,7 @@ export default class SignUpComponent {
 
   private authService = inject(AuthService);
   private _router = inject(Router);
+  private _snackBar = inject(MatSnackBar);
 
   get isEmailValid(): string | boolean {
     const control = this.form.get('email');
@@ -68,6 +83,7 @@ export default class SignUpComponent {
 
     return false;
   }
+
   async signUp(): Promise<void> {
     if (this.form.invalid) return;
 
@@ -76,12 +92,33 @@ export default class SignUpComponent {
       password: this.form.value.password || '',
     };
 
+    // Recopila datos adicionales
+    const userData = {
+      displayName: this.form.value.names + ' ' + this.form.value.lastName,
+    };
+
     try {
-      const userCredentials = await this.authService.signUpWithEmailAndPassword(credential);
-      console.log(userCredentials);
-      this._router.navigateByUrl('/');
-    } catch (error){
+      const userCredential = await this.authService.signUpWithEmailAndPassword(credential);
+      const user = userCredential.user;
+
+      // Actualiza los datos adicionales del usuario en Firebase
+      await this.authService.updateProfile(user, userData);
+
+      const snackBarRef = this.openSnackBar();
+
+      snackBarRef.afterDismissed().subscribe(() => {
+        this._router.navigateByUrl('/home');
+      });
+    } catch (error) {
       console.error(error);
     }
+  }
+
+  openSnackBar() {
+    return this._snackBar.open('Successfully Sign up 😀', 'Close', {
+      duration: 2500,
+      verticalPosition: 'top',
+      horizontalPosition: 'end',
+    });
   }
 }
